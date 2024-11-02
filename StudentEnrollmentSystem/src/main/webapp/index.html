@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Enrollment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Course Enrollment</h1>
+
+        <!-- Add Course Section -->
+        <div class="section">
+            <h2>Add Course</h2>
+            <input type="text" id="courseName" placeholder="Course Name" required>
+            <input type="text" id="courseId" placeholder="Course ID" required>
+            <button onclick="addCourse()">Add Course</button>
+        </div>
+
+        <!-- Enroll Student Section -->
+        <div class="section">
+            <h2>Enroll Student</h2>
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="text" id="studentId" placeholder="Student ID" required>
+            <select id="courseSelect">
+                <option value="" disabled selected>Select Course</option>
+            </select>
+            <button onclick="enrollStudent()">Enroll</button>
+        </div>
+
+        <!-- Display Sections -->
+        <div class="section">
+            <h2>Courses</h2>
+            <ul id="courseList"></ul>
+        </div>
+
+        <div class="section">
+            <h2>Enrollments</h2>
+            <ul id="enrollmentList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
